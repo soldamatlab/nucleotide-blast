@@ -4,5 +4,11 @@ python main.py -e ./data\scoring_matrix\blosum62.csv -d ./data\database\Homo_sap
 Ubuntu:
 python3 main.py -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 5 -t 20 --delimiter ';'
 ./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 5 -t 20 --delimiter ';'
+./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 3 -t 20 --delimiter ';' -q actcttctggtccccacagactcagagagaacccaccatggtgctgtctcctgccgacaagaccaacgtcaaggccgcctggggtaaggtcggcgcgcacgctggcgagtatggtgcggaggccctggagaggtgaggctccctcccctgctccgacccgggctcctcgcccgcccggacccacaggccaccctcaaccgtcctggccccggacccaaaccccacccctcactctgcttctccccgcaggatgttcctgtccttccccaccaccaagacctacttcccgcacttcgacctgagccacggctctgcccaggttaagggccacggcaagaaggtggccgacgcgctgaccaacgccgtggcgcacgtggacgacatgcccaacgcgctgtccgccctgagcgacctgcacgcgcacaagcttcgggtggacccggtcaacttcaaggtgagcggcgggccgggagcgatctgggtcgaggggcgagatggcgccttcctcgcagggcagaggatcacgcgggttgcgggaggtgtagcgcaggcggcggctgcgggcctgggccctcggccccactgaccctcttctctgcacagctcctaagccactgcctgctggtgaccctggccgcccacctccccgccgagttcacccctgcggtgcacgcctccctggacaagttcctggcttctgtgagcaccgtgctgacctccaaataccgttaagctggagcctcggtggccatgcttcttgccccttgggcctccccccagcccctcctccccttcctgcacccgtacccccgtggtctttgaataaagtctgagtgggcggca
+
+./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/test.fa -k 3 -t 20 --delimiter ';' -q IHNWALN
+
 
 4 hours
+0.5 hour?
+19:30 - 21:17

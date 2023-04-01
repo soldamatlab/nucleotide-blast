@@ -8,4 +8,9 @@ def load_input():
     t = args.threshold
     S = parse_scoring_matrix(args.scoring_matrix, args.delimiter)
     database = read_fasta_files(args.database)
-    return k, t, S, database
+
+    sequence = args.sequence
+    if sequence == None:
+        sequence = input("Input the query sequence:")
+
+    return sequence, database, k, t, S
