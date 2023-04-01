@@ -1,4 +1,4 @@
-import numpy as np
+from blast.hits import preproc_sequence
 
 NO_SYMBOL = ' '
 
@@ -6,6 +6,7 @@ seed = []
 seeds = []
 
 def get_seeds(sequence, k, t, S):
+    sequence = preproc_sequence(sequence)
     pure_seeds = get_pure_seeds(sequence, k, t, S)
     add_unpure_seeds(pure_seeds, k, t, S)
     return seeds
