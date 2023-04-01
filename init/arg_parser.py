@@ -1,5 +1,5 @@
 import argparse
-from scoring_matrix_parser import DEFAULT_DELIMITER
+from init.scoring_matrix_parser import DEFAULT_DELIMITER
 
 def init_parser():
     parser = argparse.ArgumentParser()
@@ -8,8 +8,8 @@ def init_parser():
     #parser.add_argument("-p", help="gap penalization")
     #parser.add_argument("-x", help="gap extension penalization")
     parser.add_argument("--database", "-d", help="list of database files in fasta format", nargs="+", required=True, type=str)
-    parser.add_argument("-k", help="length of the word", required=True, type=int)
-    parser.add_argument("-t", help="scoring threshold", required=True, type=int)
+    parser.add_argument("--word_length", "-k", help="length of the word", required=True, type=int)
+    parser.add_argument("--threshold", "-t", help="scoring threshold", required=True, type=int)
 
     parser.add_argument("--delimiter", help="Specifies delimiter of the score matrix in CSV format. Default delimiter is '" + DEFAULT_DELIMITER + "'. (Common delimiters like ',' or ';' have to be passed with quotation marks.)", type=str)
 
