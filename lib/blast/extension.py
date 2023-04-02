@@ -24,8 +24,8 @@ def gapless_extend(file, file_position, k, sequence, sequence_position, S):
     left_extension = one_sided_gapless_extend(file, file_position, sequence, sequence_position, False, S)
     right_extension = one_sided_gapless_extend(file, file_position+k-1, sequence, sequence_position+k-1, True, S)
 
-    sequence_range = range(sequence_position - left_extension, sequence_position + k-1 + right_extension)
-    file_range = range(file_position - left_extension, file_position + k-1 + right_extension)
+    sequence_range = (sequence_position - left_extension, sequence_position + k-1 + right_extension)
+    file_range = (file_position - left_extension, file_position + k-1 + right_extension)
     return sequence_range, file_range
 
 def one_sided_gapless_extend(file, file_pos, sequence, sequence_pos, go_right, S):
