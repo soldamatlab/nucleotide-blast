@@ -1,6 +1,7 @@
 from lib.init.arg_parser import init_parser
 from lib.init.scoring_matrix_parser import parse_scoring_matrix
 from lib.init.fasta_reader import read_fasta_files
+from lib.init.preproc import *
 
 def load_input():
     args, parser = init_parser()
@@ -12,5 +13,8 @@ def load_input():
     sequence = args.sequence
     if sequence == None:
         sequence = input("Input the query sequence:")
+
+    sequence = preproc_sequence(sequence)
+    database = preproc_database(database)
 
     return sequence, database, k, t, S

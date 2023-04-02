@@ -1,5 +1,3 @@
-from lib.blast.hits import preproc_sequence
-
 NO_SYMBOL = ' '
 
 seed = []
@@ -18,7 +16,6 @@ def get_seeds(sequence, k, t, S):
                             of lists of positions in sequence (one seed can have multiple
                             positions in query sequence) indexed by found seeds
     """
-    sequence = preproc_sequence(sequence)
     pure_seeds = get_pure_seeds(sequence, k, t, S)
     add_unpure_seeds(pure_seeds, k, t, S)
     return seeds, seed_positions

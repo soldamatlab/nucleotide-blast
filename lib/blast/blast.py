@@ -22,7 +22,7 @@ def blast(sequence, database, k, t, S):
           (len(seeds), sum([len(positions) for positions in seed_positions])))
 
     print("Searching for seed hits in database.")
-    hits = find_hits_in_database(seeds, database, k)
+    hits = find_hits_in_database(seeds, database, k, list(S.keys()))
     print("%d total hits found." % sum([len(file_hits) for file_hits in hits]))
 
     print("Performing gapless extension of the hits.")
