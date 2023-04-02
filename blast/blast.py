@@ -7,13 +7,15 @@ def blast(sequence, database, k, t, S):
     :param t: scoring threshold
     :param S: scoring matrix
     """
-    seeds = get_seeds(sequence, k, t, S)
+    seeds, seed_positions = get_seeds(sequence, k, t, S)
     database_hits = find_hits_in_database(seeds, database, k)
 
     print("sequence:")
     print(sequence)
     print("seeds:")
     print(seeds)
+    print("seed_positions:")
+    print(seed_positions)
     print("database:")
     print(database)
     print("database_hits:")

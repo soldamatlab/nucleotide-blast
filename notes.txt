@@ -11,4 +11,4 @@ python3 main.py -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sa
 
 4 hours
 0.5 hour?
-19:30 - 21:17
+3.25 hours

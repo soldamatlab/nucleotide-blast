@@ -11,6 +11,6 @@ def find_hits(seeds, sequence, k):
     hits = []
     for i in range(len(sequence) - k + 1):
         for seed in seeds:
-            if sequence[i:i+k].seq == seed: # TODO ? cast .seq to string
+            if sequence[i:i+k].seq == seed:
                 hits.append(i)
     return hits
