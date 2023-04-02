@@ -1,5 +1,6 @@
 from blast.seeds import get_seeds
 from blast.hits import find_hits_in_database
+from blast.extension import extend_hits
 
 def blast(sequence, database, k, t, S):
     """
@@ -8,7 +9,8 @@ def blast(sequence, database, k, t, S):
     :param S: scoring matrix
     """
     seeds, seed_positions = get_seeds(sequence, k, t, S)
-    database_hits = find_hits_in_database(seeds, database, k)
+    hits = find_hits_in_database(seeds, database, k)
+    matches = extend_hits(database, hits, k, seed_positions, sequence, S)
 
     print("sequence:")
     print(sequence)
@@ -18,7 +20,9 @@ def blast(sequence, database, k, t, S):
     print(seed_positions)
     print("database:")
     print(database)
-    print("database_hits:")
-    print(database_hits)
+    print("hits:")
+    print(hits)
+    print("matches:")
+    print(matches)
 
     return 0

@@ -45,8 +45,6 @@ def add_unpure_seeds(pure_seeds, k, t, S):
         recurent_seed_score(pure_seed, 0, k, 0, S, t)
 
 def recurent_seed_score(pure_seed, pos, k, score, S, t):
-    if pos == 0:
-        print(score)
     if pos == k:
         if score >= t:
             new_seed = "".join([str(i) for i in seed])
