@@ -1,6 +1,6 @@
-from init.arg_parser import init_parser
-from init.scoring_matrix_parser import parse_scoring_matrix
-from init.fasta_reader import read_fasta_files
+from lib.init.arg_parser import init_parser
+from lib.init.scoring_matrix_parser import parse_scoring_matrix
+from lib.init.fasta_reader import read_fasta_files
 
 def load_input():
     args, parser = init_parser()

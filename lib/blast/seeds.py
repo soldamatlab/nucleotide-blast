@@ -1,4 +1,4 @@
-from blast.hits import preproc_sequence
+from lib.blast.hits import preproc_sequence
 
 NO_SYMBOL = ' '
 
