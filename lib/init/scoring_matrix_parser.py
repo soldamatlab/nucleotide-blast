@@ -20,7 +20,7 @@ def parse_scoring_matrix(path, delimiter=DEFAULT_DELIMITER):
         for row in reader:
             row_dict = {}
             for i in range(len(row))[1:]:
-                row_dict[column_keys[i-1]] = int(row[i])
-            scoring_matrix[row[0]] = row_dict
+                row_dict[column_keys[i-1].upper()] = int(row[i])
+            scoring_matrix[row[0].upper()] = row_dict
 
     return scoring_matrix

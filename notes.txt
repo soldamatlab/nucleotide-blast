@@ -4,9 +4,9 @@ python main.py -e ./data\scoring_matrix\blosum62.csv -d ./data\database\Homo_sap
 Ubuntu:
 python3 main.py -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 5 -t 20 --delimiter ';'
 ./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 5 -t 20 --delimiter ';'
-./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 3 -t 20 --delimiter ';' -q actcttctggtccccacagactcagagagaacccaccatggtgctgtctcctgccgacaagaccaacgtcaaggccgcctggggtaaggtcggcgcgcacgctggcgagtatggtgcggaggccctggagaggtgaggctccctcccctgctccgacccgggctcctcgcccgcccggacccacaggccaccctcaaccgtcctggccccggacccaaaccccacccctcactctgcttctccccgcaggatgttcctgtccttccccaccaccaagacctacttcccgcacttcgacctgagccacggctctgcccaggttaagggccacggcaagaaggtggccgacgcgctgaccaacgccgtggcgcacgtggacgacatgcccaacgcgctgtccgccctgagcgacctgcacgcgcacaagcttcgggtggacccggtcaacttcaaggtgagcggcgggccgggagcgatctgggtcgaggggcgagatggcgccttcctcgcagggcagaggatcacgcgggttgcgggaggtgtagcgcaggcggcggctgcgggcctgggccctcggccccactgaccctcttctctgcacagctcctaagccactgcctgctggtgaccctggccgcccacctccccgccgagttcacccctgcggtgcacgcctccctggacaagttcctggcttctgtgagcaccgtgctgacctccaaataccgttaagctggagcctcggtggccatgcttcttgccccttgggcctccccccagcccctcctccccttcctgcacccgtacccccgtggtctttgaataaagtctgagtgggcggca
+./blast.sh -e ./data/scoring_matrix/BLAST.csv -d ./data/database/Homo_sapiens.GRCh38.dna_sm.chromosome.16.fa -k 8 -t 40 -q actcttctggtccccacagactcagagagaacccaccatggtgctgtctcctgccgacaagaccaacgtcaaggccgcctggggtaaggtcggcgcgcacgctggcgagtatggtgcggaggccctggagaggtgaggctccctcccctgctccgacccgggctcctcgcccgcccggacccacaggccaccctcaaccgtcctggccccggacccaaaccccacccctcactctgcttctccccgcaggatgttcctgtccttccccaccaccaagacctacttcccgcacttcgacctgagccacggctctgcccaggttaagggccacggcaagaaggtggccgacgcgctgaccaacgccgtggcgcacgtggacgacatgcccaacgcgctgtccgccctgagcgacctgcacgcgcacaagcttcgggtggacccggtcaacttcaaggtgagcggcgggccgggagcgatctgggtcgaggggcgagatggcgccttcctcgcagggcagaggatcacgcgggttgcgggaggtgtagcgcaggcggcggctgcgggcctgggccctcggccccactgaccctcttctctgcacagctcctaagccactgcctgctggtgaccctggccgcccacctccccgccgagttcacccctgcggtgcacgcctccctggacaagttcctggcttctgtgagcaccgtgctgacctccaaataccgttaagctggagcctcggtggccatgcttcttgccccttgggcctccccccagcccctcctccccttcctgcacccgtacccccgtggtctttgaataaagtctgagtgggcggca
 
-./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/test.fa -k 3 -t 20 --delimiter ';' -q IHNWALN
+./blast.sh -e ./data/scoring_matrix/blosum62.csv -d ./data/database/test.fa -k 3 -t 15 -q IHNWALN --delimiter ';'
 
 
 4 hours
@@ -14,4 +14,5 @@ python3 main.py -e ./data/scoring_matrix/blosum62.csv -d ./data/database/Homo_sa
 3.25 hours
 1.5 hours
 3 hours?
-19:45 - 
+4 hours?
+19:10 -

@@ -7,14 +7,15 @@ def load_input():
     args, parser = init_parser()
     k = args.word_length
     t = args.threshold
+    
     S = parse_scoring_matrix(args.scoring_matrix, args.delimiter)
+
     database = read_fasta_files(args.database)
+    database = preproc_database(database)
 
     sequence = args.sequence
     if sequence == None:
         sequence = input("Input the query sequence:")
-
     sequence = preproc_sequence(sequence)
-    database = preproc_database(database)
 
     return sequence, database, k, t, S
