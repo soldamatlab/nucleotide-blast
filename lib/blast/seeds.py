@@ -20,7 +20,7 @@ def get_seeds(sequence, k, t, S):
     print("Searching for seeds in query sequence with seed score threshold %d." % t)
 
     pure_seeds = get_pure_seeds(sequence, k, t, S)
-    add_unpure_seeds(pure_seeds, k, t, S)
+    add_impure_seeds(pure_seeds, k, t, S)
 
     print("%d unique seeds found with %d viable \"seed & position in query sequence\" combinations." %
           (len(seeds), sum([len(positions) for positions in seed_positions])))
@@ -47,7 +47,7 @@ def get_pure_seeds(sequence, k, t, S):
                 seed_positions[seed].append(start)
     return pure_seeds
 
-def add_unpure_seeds(pure_seeds, k, t, S):
+def add_impure_seeds(pure_seeds, k, t, S):
     for i in range(k): seed.append(NO_SYMBOL)
     for pure_seed in pure_seeds:
         recurent_seed_score(pure_seed, 0, k, 0, S, t)

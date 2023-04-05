@@ -1,4 +1,5 @@
 import argparse
+
 from lib.init.scoring_matrix_parser import DEFAULT_DELIMITER
 
 def init_parser():

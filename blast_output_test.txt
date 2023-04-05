@@ -1,0 +1,4 @@
+BLAST found 1 matches in 0.118359 seconds
+
+__________ Found matches: __________
+match:   file "test" [8, 13] <=> [2, 7] query   score = 34
