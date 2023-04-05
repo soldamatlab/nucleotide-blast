@@ -1,4 +1,0 @@
-Python libraries:
-argparse
-csv
-biopython
