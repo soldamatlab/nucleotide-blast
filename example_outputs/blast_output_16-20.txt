@@ -1,0 +1,26 @@
+BLAST found 4273253 matches in 18 minutes, 55.057633 seconds
+
+__________ Found matches: __________
+match:   file "16" [176680, 177522] <=> [1, 843] query   score = 4215
+match:   file "16" [172876, 173383] <=> [1, 508] query   score = 2540
+match:   file "16" [173449, 173614] <=> [581, 746] query   score = 830
+match:   file "16" [173385, 173447] <=> [510, 572] query   score = 315
+match:   file "16" [153914, 153943] <=> [272, 301] query   score = 150
+match:   file "16" [164504, 164533] <=> [272, 301] query   score = 150
+match:   file "16" [173680, 173706] <=> [813, 839] query   score = 135
+match:   file "16" [154076, 154099] <=> [434, 457] query   score = 120
+match:   file "16" [164666, 164689] <=> [434, 457] query   score = 120
+match:   file "19" [6714140, 6714159] <=> [771, 790] query   score = 100
+match:   file "19" [54472543, 54472562] <=> [772, 791] query   score = 100
+match:   file "19" [51015713, 51015732] <=> [774, 793] query   score = 100
+match:   file "19" [55374917, 55374935] <=> [773, 791] query   score = 95
+match:   file "19" [54472465, 54472483] <=> [773, 791] query   score = 95
+match:   file "19" [44759043, 44759061] <=> [773, 791] query   score = 95
+.
+.
+. deleted for BRUTE upload
+.
+.
+match:   file "18" [13262059, 13262066] <=> [307, 314] query   score = 40
+match:   file "16" [86933378, 86933385] <=> [587, 594] query   score = 40
+match:   file "17" [33487679, 33487686] <=> [190, 197] query   score = 40
